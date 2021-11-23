@@ -1,0 +1,21 @@
+#서버 접속 끊어지면 error 발생한 것으로 error massage 확인할 필요 없음. 
+
+streamlit==1.1.0 #0.71, 0.79, 0.89버전 사용시 웹배포 diary의 streamlit colum에서 문제 발생 추정
+scikit-learn==0.23.2
+awesome-streamlit==20200728.1 #import는 안되고 이 방법이 가능함.
+pip == 21.3.1 # 지속되는 오류로 추가됨.
+
+# !pip install 방식 진행 불가. 
+
+#언어분류기 pip
+#!pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&subdirectory=kobert_hf' 방식 진행 불가. 
+
+#kober_hf모델의 requirement file에서 발췌.
+torch >= 1.8.1 #kobert_hf모델 우선 사용. 
+transformers >= 4.8.2 #kobert_hf모델 우선 사용. 
+sentencepiece >= 0.1.91 #kobert_hf모델 우선 사용. 
+mxnet >= 1.4.0
+gluonnlp >= 0.6.0
+
+#불가.
+#kobert-tokenizer>=0.1
